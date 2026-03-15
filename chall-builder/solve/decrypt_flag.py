@@ -30,7 +30,7 @@ if __name__ == "__main__":
     
     # Encrypted message recovered from memory
     # Thay đổi giá trị này sau khi extract từ memory dump
-    ciphertext = bytes.fromhex("020917380808061f0a062634091c050e05001217062d0115310c000b0b100522")
+    ciphertext = bytes.fromhex("0d0b053a100902101e193a060a0b1d3a1a3a120e102d04063a3401180a02132d1c10100f")
     
     # Decrypt
     flag = xor_decrypt(ciphertext, key)

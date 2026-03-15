@@ -32,7 +32,7 @@ fi
 
 # Test solve script
 echo -n "Testing solve script... "
-if python3 solve/decrypt_flag.py 2>&1 | grep -q "flag{memory_leaks_are_dangerous}"; then
+if python3 solve/decrypt_flag.py 2>&1 | grep -q "inseclab{memory_leaks_are_dangerous}"; then
     echo -e "${GREEN}✓ PASS${NC}"
     PASS=$((PASS+1))
 else
@@ -67,7 +67,7 @@ fi
 
 # Check flag in source
 echo -n "Flag in source code... "
-if grep -q "flag{memory_leaks_are_dangerous}" src/chatclient.c; then
+if grep -q "inseclab{memory_leaks_are_dangerous}" src/chatclient.c; then
     echo -e "${GREEN}✓ PASS${NC}"
     PASS=$((PASS+1))
 else

@@ -5,7 +5,7 @@ Sử dụng để kiểm tra thuật toán trước khi tạo memory dump
 """
 
 key = b"dev_secret_key"
-msg = b"flag{memory_leaks_are_dangerous}"
+msg = b"inseclab{memory_leaks_are_dangerous}"
 
 print("=" * 60)
 print("Testing XOR Encryption/Decryption Logic")

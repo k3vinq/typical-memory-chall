@@ -2,7 +2,7 @@
 #include <string.h>
 
 char key[] = "dev_secret_key";
-char message[] = "flag{memory_leaks_are_dangerous}";
+char message[] = "inseclab{memory_leaks_are_dangerous}";
 
 void encrypt(char *data, int len) {
     int keylen = strlen(key);
