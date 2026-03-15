@@ -1,0 +1,74 @@
+=================================================================
+         CHAT APPLICATION LEAK - MEMORY FORENSICS CHALLENGE
+=================================================================
+
+CATEGORY: Forensics / Memory Analysis
+DIFFICULTY: Easy-Medium
+
+=================================================================
+STORY
+=================================================================
+
+A developer was testing an experimental chat client that encrypts
+messages before sending them to a server. During testing, the 
+application crashed unexpectedly.
+
+A memory dump of the machine was collected for debugging purposes.
+
+Your task is to analyze the memory dump and recover the secret 
+message that was being encrypted.
+
+=================================================================
+OBJECTIVE
+=================================================================
+
+Recover the flag from the memory dump.
+
+Flag format: flag{...}
+
+=================================================================
+FILES PROVIDED
+=================================================================
+
+- memory.raw : RAM dump from Windows machine
+
+=================================================================
+TOOLS YOU MAY NEED
+=================================================================
+
+- Volatility 3 (memory forensics framework)
+- Ghidra or IDA Pro (reverse engineering)
+- Python 3 (for scripting)
+- Hex editor (optional)
+
+=================================================================
+HINTS
+=================================================================
+
+1. Start by identifying suspicious processes in the memory dump
+2. The application was encrypting a message when it crashed
+3. Both the encryption key and encrypted data may still be in memory
+4. Understanding how the encryption works is crucial
+5. XOR operations are reversible...
+
+=================================================================
+GETTING STARTED
+=================================================================
+
+Volatility 3 basic commands:
+
+  # Get memory dump info
+  volatility3 -f memory.raw windows.info
+
+  # List running processes
+  volatility3 -f memory.raw windows.pslist
+
+  # Dump files from a process
+  volatility3 -f memory.raw windows.dumpfiles --pid <PID>
+
+  # Search for strings
+  volatility3 -f memory.raw windows.strings
+
+=================================================================
+GOOD LUCK!
+=================================================================

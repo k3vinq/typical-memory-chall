@@ -1,0 +1,68 @@
+chall-builder/
+├── 📖 Documentation & Guides
+│   ├── INDEX.md                    # 🚀 START HERE - Navigation guide
+│   ├── QUICKSTART.md               # ⚡ 5-minute quick start
+│   ├── PROJECT_SUMMARY.md          # 📊 Complete summary
+│   ├── README.md                   # 📚 Full Ubuntu workflow
+│   ├── UBUNTU_STATUS.md            # 📈 Current status & progress
+│   └── WINDOWS_GUIDE.md            # 🪟 Windows VM setup guide
+│
+├── 🛠️ Build & Setup Scripts
+│   ├── setup_ubuntu.sh             # Install all required tools
+│   ├── build.sh                    # Compile chatclient.exe
+│   └── verify.sh                   # Verify everything is ready
+│
+├── 💻 Source Code
+│   └── src/
+│       └── chatclient.c            # Windows chat client (XOR encryption)
+│
+├── 📦 Binary Output
+│   └── bin/
+│       └── chatclient.exe          # (created after ./build.sh)
+│
+├── 🧪 Solution & Testing
+│   └── solve/
+│       ├── test_decrypt.py         # Test XOR encryption logic
+│       └── decrypt_flag.py         # Solve the challenge
+│
+├── 📚 Challenge Documentation
+│   └── docs/
+│       ├── description.txt         # For players (plaintext)
+│       ├── challenge_description.md # For players (markdown)
+│       ├── author_notes.md         # Design & intended solution
+│       └── install_tools.md        # Tool installation guide
+│
+└── ✅ Testing
+    └── test/
+        └── checklist.md            # Complete testing checklist
+
+═══════════════════════════════════════════════════════════════════
+
+📊 Statistics:
+   - Total files: 20
+   - Scripts: 3 (executable)
+   - Source files: 1 (C)
+   - Python scripts: 2
+   - Documentation: 13 (Markdown)
+   - Text files: 1
+
+═══════════════════════════════════════════════════════════════════
+
+🚀 Quick Start:
+   cd /home/kevin/UIT/Forensic/ez-memory/chall-builder
+   ./setup_ubuntu.sh    # Install tools
+   ./build.sh           # Compile binary
+   ./verify.sh          # Check everything
+
+═══════════════════════════════════════════════════════════════════
+
+📖 Read First:
+   1. INDEX.md              (Navigation guide)
+   2. QUICKSTART.md         (5-minute start)
+   3. PROJECT_SUMMARY.md    (What's done)
+
+═══════════════════════════════════════════════════════════════════
+
+✅ Ubuntu Phase: 95% Complete
+⏳ Next: Install MinGW → Compile → Windows VM
+
