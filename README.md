@@ -1,6 +1,6 @@
 # CTF Memory Forensics Challenge - ez-memory
 
-## 🎯 Quick Start
+## Quick Start
 
 ```bash
 cd chall-builder
@@ -11,7 +11,7 @@ cd chall-builder
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 
 ```
 ez-memory/
@@ -28,7 +28,7 @@ ez-memory/
 
 ---
 
-## 🚀 What to Do
+## What to Do
 
 ### Step 1: Navigate to Work Directory
 ```bash
@@ -50,78 +50,3 @@ Or just run:
 ./verify.sh
 ```
 
----
-
-## 📚 Documentation
-
-Everything is documented in `chall-builder/`:
-
-- **INDEX.md** - Complete navigation guide
-- **QUICKSTART.md** - Get started in 5 minutes
-- **PROJECT_SUMMARY.md** - What's been completed
-- **README.md** - Full Ubuntu workflow
-- **WINDOWS_GUIDE.md** - Windows VM instructions
-
----
-
-## ✅ Current Status
-
-**Ubuntu Phase: 95% Complete**
-
-What's done:
-- ✅ Source code written
-- ✅ Test scripts created
-- ✅ Documentation complete
-- ✅ Build scripts ready
-
-What's needed:
-- ⚠️ Install MinGW: `sudo apt install mingw-w64`
-- ⚠️ Compile binary: `./build.sh`
-- ⏳ Windows VM setup (see WINDOWS_GUIDE.md)
-
----
-
-## 🎓 Challenge Info
-
-- **Name:** Chat Application Leak
-- **Category:** Memory Forensics
-- **Difficulty:** Easy-Medium
-- **Flag:** `flag{memory_leaks_are_dangerous}`
-
----
-
-## 💡 Quick Commands
-
-```bash
-# Everything happens in chall-builder/
-cd chall-builder
-
-# Install tools
-./setup_ubuntu.sh
-
-# Compile Windows binary
-./build.sh
-
-# Test encryption logic
-python3 solve/test_decrypt.py
-
-# Verify everything
-./verify.sh
-```
-
----
-
-## 📖 Read First
-
-Go to `chall-builder/` and read:
-1. **INDEX.md** - Navigation (start here)
-2. **QUICKSTART.md** - Quick start guide
-3. **PROJECT_SUMMARY.md** - What's completed
-
----
-
-**All work is in `chall-builder/` directory. Start there!**
-
-```bash
-cd chall-builder && cat INDEX.md
-```
